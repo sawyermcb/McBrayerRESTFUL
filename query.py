@@ -9,8 +9,7 @@ def test_ddg0():
     resp = requests.get(url_ddg + "/?q=DuckDuckGo&format=json")
     rsp_data = resp.json()
     assert "DuckDuckGo" in rsp_data["Heading"]
-counter_correct = 0
-def test_presidents():
+def test_presidents(r):
     assert "Washington" in ['Text']
     assert "Adams" in ['Text']
     assert "Jefferson" in ['Text']
